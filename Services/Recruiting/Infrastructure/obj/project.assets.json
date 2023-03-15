@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "ApplicationCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ApplicationCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApplicationCore.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ApplicationCore/1.0.0": {
+      "type": "project",
+      "path": "../ApplicationCore/ApplicationCore.csproj",
+      "msbuildProject": "../ApplicationCore/ApplicationCore.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "ApplicationCore >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\junyi\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Recruiting\\ApplicationCore\\ApplicationCore.csproj": {
+              "projectPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Recruiting\\ApplicationCore\\ApplicationCore.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

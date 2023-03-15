@@ -3,3 +3,17 @@ The url consists of http://domain/controller/actionMethod/id. For each controlle
 By default we are viewing the index action method under home controller. We can change this in program.cs.
 In the controller class, action methods, return View(); will return the view with corresponding method name.
 We can also specify the view we want to return by using return View("test"); which will return Test.cshtml. Not case sensitive.
+
+ApplicationCore is the base project for the application
+Entities in ApplicationCore will have objects that represent our DB tables
+Models -> will have objects that represent your UI
+
+
+Dapper is from StackOverflow
+
+Services -> Domain/BUsiness Logic
+e.g. GetJobById , Send Confirmation Email, Get All jobs
+
+Controller => Services => Repositories(using EF Core or Dapper or ADO.NET ) -> Database
+
+
