@@ -1,0 +1,5 @@
+We build separate projects for different modules to properly organize and resuse our code.
+The url consists of http://domain/controller/actionMethod/id. For each controller we can have many action methods
+By default we are viewing the index action method under home controller. We can change this in program.cs.
+In the controller class, action methods, return View(); will return the view with corresponding method name.
+We can also specify the view we want to return by using return View("test"); which will return Test.cshtml. Not case sensitive.
