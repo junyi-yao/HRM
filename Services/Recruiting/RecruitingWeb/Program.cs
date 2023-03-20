@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IJobService, JobsMongoDbService>();
+//Ninject and autofac to use other Dependency Injections
 
 var app = builder.Build();
 

@@ -7,7 +7,7 @@ namespace RecruitingWeb.Controllers
     public class JobsController : Controller
     {
         
-        private IJobService _jobService;
+        private readonly IJobService _jobService;
 
         public JobsController(IJobService jobService)
         {
