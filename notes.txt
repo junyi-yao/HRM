@@ -1,3 +1,5 @@
+Day1:
+
 We build separate projects for different modules to properly organize and resuse our code.
 The url consists of http://domain/controller/actionMethod/id. For each controller we can have many action methods
 By default we are viewing the index action method under home controller. We can change this in program.cs.
@@ -16,4 +18,22 @@ e.g. GetJobById , Send Confirmation Email, Get All jobs
 
 Controller => Services => Repositories(using EF Core or Dapper or ADO.NET ) -> Database
 
+The interfaces in contracts under ApplicationCore will be implemented in Infrastructure
 
+
+Day2:Dependency Injection
+
+Older versions dotnet framework use : Njinject and autofac to use Denpendency injection
+Now dotnet core has built-in Dependency Injection 
+if you need to use advanced Dependency Injection(e.g. property Injection, method Injection, conditional Injection),
+You still need to use Njinject and autofac(more popular)
+
+Dependency injection is used to build loosly coupled code/application
+to have your code maintainable and testable
+
+ADO.NET ==> lower level API -> write lots of code
+Dapper is micro ORM(object relational mapping) from StackOverflow. A bunch of extensions built on ADO.NET. 
+Need to have an existing DB to use Dapper.
+
+ORM => Object Relational Mapper
+data access code simpler and write less code
