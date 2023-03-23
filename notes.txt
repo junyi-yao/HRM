@@ -33,7 +33,93 @@ to have your code maintainable and testable
 
 ADO.NET ==> lower level API -> write lots of code
 Dapper is micro ORM(object relational mapping) from StackOverflow. A bunch of extensions built on ADO.NET. 
-Need to have an existing DB to use Dapper.
+Need to have an existing DB to use Dapper. (e.g. Northwind, AdventureWorks)
+var employees = db.connection.execute <Employees> ("select * from Employee")
+var employees = db.connection.execute <Employees>  ("usp_GetEmployee")
 
 ORM => Object Relational Mapper
 data access code simpler and write less code
+
+Entity Framework -> Saves lots of time in creating/accessing the database
+1. you can create complete DB using C# code with code-first appraoch , using concept called Migrations
+2. you can access database and CRUD operations with just C#(LINQ) without writing any SQL
+    Dapper/ADO.NET => SELECT * from Jobs where salary > 60000
+    EF             => var employees = Employee.where(e => e.Salary > 60000).ToList(); 
+                                        SELECT * from Jobs where salary > 60000
+                      var employees = Employee.ToList().where(e => e.Salary > 60000).ToList(); 
+                                        SELECT * from Jobs;
+                                        then the filter > 60000 is gonna happen in memory
+3. can map the data to C# Entities
+
+
+Day3: create DB
+
+Jobs => Jobs Info, ID, Title, Desc, JobCode
+Candidate => Candidates
+Submission => when candidates apply for the job [Candidate & JobId] => Unique constraints
+JobStatusLookUp => Open, Closed, pending closed, postponed
+
+step1: Install EF Core tools package globally
+dotnet tool update --global dotnet-ef
+dotnet tool install --global dotnet-ef
+
+
+
+step2: First create an entity -> C# object that represents a table in the DB(Job.cs)
+
+
+step3: Install required EF Core packages from Nuget in projects
+    Microsoft.EntityFrameworkCore.SqlServer(in all three projects)
+    Microsoft.EntityFrameworkCore.Design(in RecuitingWeb)
+
+
+step4: In EF we have 2 very important classes
+    DbContext => Represents your database
+    DbSet => Represents your tables
+
+
+step5: create the DbContext class and DbSet properties for the project(in Infrastructure)
+
+
+step6: Create the Database ConnectionString, and establish that connectionString with the DbContext
+        Keep Connection Strings if locally in the project in appsettings.json(most unsecure)
+        user secrets(locally)
+        Azure KeyVault
+Run this to get name of device:
+SELECT @@SERVERNAME
+
+ConnectionString:
+For Mac: "RecruitingDbConnection": "Server=localhost;Database=RecruitingDb;User=sa;Password=Antra300@@;TrustServerCertificate=True;"
+For Windows: "RecruitingDbConnection": "Server=Abhilash-PC;Database=RecruitingDb;Integrated Security=True;TrustServerCertificate=True;"
+
+step7: establish that connectionString with the DbContext using DI using the AddDbContext method
+
+step8: Create your first Migration using dotnet ef tools commands
+//-p (stands for property) tells which project to use
+dotnet ef migrations add InitialMigration -p ../Infrastructure/Infrastructure.csproj 
+
+some links:
+https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli
+
+
+step9: always, check your migration file and see if it has things that you are trying to create
+
+
+step10: Apply the migration using command
+        dotnet ef database update 
+
+step11: To model your database with rules, constraints etc we can do this in two ways
+        1. Data Annotations
+        2. Fluent API(if you have conflict rules for the same property, fluent API will take precedence)
+
+    dotnet ef migrations add UpdateingJobsTable -p ../Infrastructure/Infrastructure.csproj
+    dotnet ef database update
+    To remove a migration:
+    dotnet ef migrations remove -p ../Infrastructure/Infrastructure.csproj
+always use code-first approach if you want to change the schemas! You can change data using sql, but not schemas
+
+
+Create a foreign key:
+https://learn.microsoft.com/en-us/ef/core/modeling/relationships?tabs=fluent-api%2Cfluent-api-simple-key%2Csimple-key
+
+

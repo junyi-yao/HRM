@@ -610,13 +610,17 @@
         }
       },
       "ApplicationCore/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.4"
+        },
         "runtime": {
           "ApplicationCore.dll": {}
         }
       },
       "Infrastructure/1.0.0": {
         "dependencies": {
-          "ApplicationCore": "1.0.0"
+          "ApplicationCore": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.4"
         },
         "runtime": {
           "Infrastructure.dll": {}
