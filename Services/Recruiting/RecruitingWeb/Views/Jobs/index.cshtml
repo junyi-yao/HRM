@@ -1,0 +1,56 @@
+﻿@model IEnumerable<ApplicationCore.Models.JobResponseModel>
+
+@{
+    ViewData["Title"] = "index";
+}
+
+<h1>index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Title
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                StartDate
+            </th>
+            <th>
+                NumberOfPositions
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                    <a asp-controller = "Jobs" asp-action="Details" asp-route-id="@item.Id">@item.Title</a>
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfPositions)
+            </td>
+           
+        </tr>
+}
+    </tbody>
+</table>

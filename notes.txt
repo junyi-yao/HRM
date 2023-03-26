@@ -123,3 +123,45 @@ Create a foreign key:
 https://learn.microsoft.com/en-us/ef/core/modeling/relationships?tabs=fluent-api%2Cfluent-api-simple-key%2Csimple-key
 
 
+
+Day4: async
+
+asynchronous programming -> 2002
+async/await -> 2012 oler .net framework 4.5
+
+Thread Starvation: when you run out threads in the thread pool
+
+public async Task<IActionResult> Index()
+        {
+            var jobs = await _jobService.GetAllJobs(); -> returning task. note:ToList() is synchronous method, we should use ToListAsync()
+            return View();
+            //thread starvation, scalability of our application
+        }
+
+it will not add new threads, it will use existing threads properly
+
+3 ways we cans send data from controller/action method to view
+
+1. ViewBag
+2. ViewData
+most frequently used way:
+3. ***Strongly Typed Model data***
+
+<a asp-action="Create">Create New</a> ==> asp-action is tag helper(preferred one)
+@Html.DisplayFor(modelItem => item.NumberOfPositions)  ==> this is html helper(Introduced in .net core)
+
+
+Two ways to generate the view from controller/action:
+1. the UI way(create a view using add -> View -> Razor View, see screenshot in notes in the recording folder)
+
+2. using the terminal:
+
+install the tool:
+dotnet tool install -g dotnet-aspnet-codegenerator
+dotnet-aspnet-codegenerator view Index list -m JobResponseModel  -outDir Views/jobs  -udl  -scripts
+
+Index: View name
+list: template
+-m JobResponseModel: the model
+-udl: use default layout
+

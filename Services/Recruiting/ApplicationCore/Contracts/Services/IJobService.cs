@@ -9,9 +9,9 @@ namespace ApplicationCore.Contracts.Services
 {
     public interface IJobService
     {
-        List<JobResponseModel> GetAllJobs();
+        Task <List<JobResponseModel>> GetAllJobs();
 
-        JobResponseModel GetJobById(int id);
+        Task <JobResponseModel> GetJobById(int id);
 
     }
 }
