@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ApplicationCore.Contracts.Repositories
 {
-    public interface IJobRepository
+    public interface IJobRepository:IBaseRepository<Job>
     {
         Task <List<Job>> GetAllJobs();
 

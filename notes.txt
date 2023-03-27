@@ -109,7 +109,7 @@ step10: Apply the migration using command
         dotnet ef database update 
 
 step11: To model your database with rules, constraints etc we can do this in two ways
-        1. Data Annotations
+        1. Data Annotations(annotate constraints in the jobs entity and .net will convert it for you)
         2. Fluent API(if you have conflict rules for the same property, fluent API will take precedence)
 
     dotnet ef migrations add UpdateingJobsTable -p ../Infrastructure/Infrastructure.csproj
@@ -127,15 +127,15 @@ https://learn.microsoft.com/en-us/ef/core/modeling/relationships?tabs=fluent-api
 Day4: async
 
 asynchronous programming -> 2002
-async/await -> 2012 oler .net framework 4.5
-
+async/await -> 2012 .net framework 4.5
+to prevent thread starvation, and add scalability of our application
 Thread Starvation: when you run out threads in the thread pool
 
 public async Task<IActionResult> Index()
         {
             var jobs = await _jobService.GetAllJobs(); -> returning task. note:ToList() is synchronous method, we should use ToListAsync()
             return View();
-            //thread starvation, scalability of our application
+            
         }
 
 it will not add new threads, it will use existing threads properly
@@ -159,9 +159,32 @@ Two ways to generate the view from controller/action:
 install the tool:
 dotnet tool install -g dotnet-aspnet-codegenerator
 dotnet-aspnet-codegenerator view Index list -m JobResponseModel  -outDir Views/jobs  -udl  -scripts
-
 Index: View name
 list: template
 -m JobResponseModel: the model
 -udl: use default layout
 
+
+Day5: .Net Core Validation and Middleware
+
+dotnet-aspnet-codegenerator view Create create -m JobRequestModel -outDir Views/jobs -udl -scripts
+
+Validation happen on both client and server side, but server side is more important. Because we can make a POST
+request without a client(like using POSTMAN)
+
+form-control: uses bootstrap. bootstrap can help build responsive sites by adjusting to different devices
+
+when you post the form, you can send the data with the name tags as key-value pairs!(So name and ID are both important)
+model-binding: the data from the browser will be sent to the model and the object(model) properties will be mapped to the data
+you can also map the values to parameters in the function arguments like:
+public async Task<IActionResult> Create(JobRequestModel model, string Location) ==> you can map locaion to the parameter Location
+
+public async Task<int> AddtAsync(T Entity)
+        {
+            _dbContext.Set<T>().Add(Entity);
+            await _dbContext.SaveChangesAsync();
+            return 1;
+        }
+
+in this method we have to write await _dbContext.SaveChangesAsync();
+This is the line of code that actually make the changes!

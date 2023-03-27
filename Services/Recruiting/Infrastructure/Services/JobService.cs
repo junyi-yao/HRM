@@ -1,9 +1,11 @@
 ﻿using ApplicationCore.Contracts.Repositories;
 using ApplicationCore.Contracts.Services;
+using ApplicationCore.Entities;
 using ApplicationCore.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -50,6 +52,28 @@ namespace Infrastructure.Services
             };
             return jobResponseModel;
             
+        }
+        public async Task<int> AddJob(JobRequestModel model)
+        {
+            //call the repository that will use EF Core to save the data
+            var jobEntity = new Job
+            {
+                Title= model.Title,
+                StartDate= model.StartDate, 
+                Description= model.Description,
+                CreatedOn = DateTime.UtcNow,
+                NumberOfPositions= model.NumberOfPositions,
+                JobStatusLookUpId = 1
+            };
+            //we just created a job entity based on the model
+            //and pass the entity to the database
+            //The entity did not include the Id(PK)
+            //But that's fine, the db will auto assign a PK to this entity
+            //Each time the Add method is called, the PK will increase by one
+            //the id wil be included in the returned entity(the entity object is changed reflecting the change in the db)
+            //entity.Id now equals to the id assigned by the db
+            var job = await _jobRepository.AddtAsync(jobEntity);
+            return job.Id;
         }
     }
 }

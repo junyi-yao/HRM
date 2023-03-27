@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Hosting;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System;
+using ApplicationCore.Models;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace RecruitingWeb.Controllers
 {
@@ -69,11 +71,31 @@ namespace RecruitingWeb.Controllers
 
         //Authenticated and User should have role for creating new job
         //HR/Manager
-        [HttpPost]
+
+
+        //show the empty page
+        [HttpGet]
         public IActionResult Create()
         {
             //take the information from the view and save to DB
             return View();
         }
+
+        //saving the Job Information
+        [HttpPost]
+        public async Task<IActionResult> Create(JobRequestModel model)
+        {
+            //check if the model is valid on the server
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+            //save the data in the database
+            //return to the index view
+            await _jobService.AddJob(model);
+            return RedirectToAction("Index");
+
+        }
+
     }
 }
