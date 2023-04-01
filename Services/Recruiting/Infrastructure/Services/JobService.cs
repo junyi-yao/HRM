@@ -43,6 +43,10 @@ namespace Infrastructure.Services
 
         public async Task<JobResponseModel> GetJobById(int id) {
             var job = await _jobRepository.GetJobByID(id);
+            if(job == null)
+            {
+                return null;
+            }
             var jobResponseModel = new JobResponseModel
             {
                 Id = job.Id,

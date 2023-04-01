@@ -166,11 +166,13 @@ list: template
 
 
 Day5: .Net Core Validation and Middleware
-
+First create a view for job posting(create):
 dotnet-aspnet-codegenerator view Create create -m JobRequestModel -outDir Views/jobs -udl -scripts
 
 Validation happen on both client and server side, but server side is more important. Because we can make a POST
 request without a client(like using POSTMAN)
+
+To do validation we use Data Annotations
 
 form-control: uses bootstrap. bootstrap can help build responsive sites by adjusting to different devices
 
@@ -179,12 +181,49 @@ model-binding: the data from the browser will be sent to the model and the objec
 you can also map the values to parameters in the function arguments like:
 public async Task<IActionResult> Create(JobRequestModel model, string Location) ==> you can map locaion to the parameter Location
 
+
+
 public async Task<int> AddtAsync(T Entity)
         {
             _dbContext.Set<T>().Add(Entity);
             await _dbContext.SaveChangesAsync();
             return 1;
         }
-
 in this method we have to write await _dbContext.SaveChangesAsync();
-This is the line of code that actually make the changes!
+Add(Entity) will create a temporary entity, but SaveChangesAsync() will 
+actually commit the changes to the database
+
+
+The Id(PK) will be automatically generated. PK will auto increase(even if insertion failed)
+
+
+https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-7.0
+https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-7.0#built-in-middleware
+Middleware -> a piece of software plugged into the http pipeline. The order of middleware is very important
+
+
+Request -> M1(check the user is authenticated, check the http header and maybe read some http info)
+    M2 (some logic)
+    M3
+Response 
+    
+    
+    Built-in-Middleware
+    Custom middlewares
+    Register them in proper order(In Program.cs)
+
+HttpContext is an object that's going to capture all information regarding an http Request&Response
+
+Home Page list all the jobs -> for each and every job you should give option(link) to see submissions for the job
+Click on Job Title should go to Jobs/Details -> Apply button(POST) to submissions table
+    Candidate FirstName, LastName, Email(show Job Code and Title)
+    When saving the submission check if a submission already exists for that Email
+Create New Job Button on Jobs list page 
+    Create New Job should be using Validations and also should have dropdown(research) for JobStatus 
+    Create New Job and save to Database
+    
+
+
+
+
+Filters ->
