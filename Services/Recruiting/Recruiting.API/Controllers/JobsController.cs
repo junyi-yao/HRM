@@ -1,4 +1,5 @@
 ﻿using ApplicationCore.Contracts.Services;
+using ApplicationCore.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -34,7 +35,7 @@ namespace Recruiting.API.Controllers
         }
 
         [HttpGet]
-        [Route("{id:int}")]
+        [Route("{id:int}", Name = "GetJobDetails")]
         public async Task<IActionResult> GetJobDetails(int id)
         {
             var job = await _jobService.GetJobById(id);
@@ -43,6 +44,20 @@ namespace Recruiting.API.Controllers
                 return NotFound(new {errorMessage = "No Job found for this id"});
             }
             return Ok(job);
+        }
+
+        [HttpPost]
+        [Route("")]
+        public async Task<IActionResult> Create(JobRequestModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            var job = await _jobService.AddJob(model);
+            return CreatedAtAction
+                ("GetJobDetails", new {controller = "Jobs", id = job}, "Job Created");
         }
     }
 }

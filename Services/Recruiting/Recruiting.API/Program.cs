@@ -17,20 +17,25 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IJobService, JobService>();
 //Ninject and autofac to use other Dependency Injections
 builder.Services.AddScoped<IJobRepository, JobRepository>();
-//Inject our connectionstring into DbContext
-builder.Services.AddDbContext<RecruitingDbContext>(
-    options => options.UseSqlServer(builder.Configuration.GetConnectionString("RecruitingDbConnection"))
-    );
 
+
+var dockerConnectionString = Environment.GetEnvironmentVariable("MSSQLConnectionString");
+
+//Inject our connectionstring into DbContext
+//builder.Services.AddDbContext<RecruitingDbContext>(
+//    options => options.UseSqlServer(builder.Configuration.GetConnectionString("RecruitingDbConnection"))
+//    );
+
+builder.Services.AddDbContext<RecruitingDbContext>(options => options.UseSqlServer(dockerConnectionString));
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+//if (app.Environment.IsDevelopment())
+//{
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+//}
 
 app.UseHttpsRedirection();
 

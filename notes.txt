@@ -214,6 +214,8 @@ Response
 
 HttpContext is an object that's going to capture all information regarding an http Request&Response
 
+HW for Day 5:
+
 Home Page list all the jobs -> for each and every job you should give option(link) to see submissions for the job
 Click on Job Title should go to Jobs/Details -> Apply button(POST) to submissions table
     Candidate FirstName, LastName, Email(show Job Code and Title)
@@ -227,3 +229,88 @@ Create New Job Button on Jobs list page
 
 
 Filters ->
+
+
+
+
+day6: API
+
+REST API
+REST: a guideline for creating API
+
+Company ABC
+
+Apply for the Jobs -> 
+.NET Team Web APP using MVC C#, SQL Server Database
+
+Create an API(REST, Http), old API Web Services SOAP
+
+number of endpoints -> based on HTTP verbs GET, POST, PUT, DELETE
+GET http://recruiting.com/api/jobs -> List of Jobs sorted by Created date 
+GET http://recruiting.com/api/jobs/1 -> Details of the Job 
+POST http://recruiting.com/api/jobs -> Admin will create a new Job
+
+POST http://recruiting/api/submissions -> Apply for the Job by Candidate
+GET http://recruiting/api/submissions/jobs/1 -> Get all the submissions for a particular Job 
+
+Provide a proper Documentation
+Swagger
+
+
+Mobile
+IOS(swift) and Android(Java) app -> 
+list of Jobs => call the Recruiting API end points 
+GET http://recruiting.com/api/jobs -> 
+
+
+Build WebRecruiting.API:(add scaffold item, empty API controller)
+add references for ApplicationCore and Infrastructure
+copy all the DI registration including DbContext into API project program.cs
+copy connection string to appsettings
+
+
+
+day7: Microservices and containerization
+
+monolithic architecture: a big application, not broken down into microservices(if one servive goes down, everything goes down)
+microservices: fairly new application, fault tolerance
+intended to be independent. May need to have repitition on the data.
+
+
+.net monorepo microservices architecture
+
+
+add a controller in API: add new scaffolded item
+
+
+Process:
+In program.cs:
+//if (app.Environment.IsDevelopment())
+//{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+//}
+
+comment the if statement out when you publish your application because you are no longer in Development
+To keep using Swagger
+
+1. publish your application(to folder when in Development)
+2. add docker support(create a docker file). Move this docker file to the root(HRM/)
+
+
+In Dockerfile:
+ENV MSSQLConnectionString='Server = JunyiMSI;Database = RecruitingDb;Integrated Security = True;TrustServerCertificate = True;'
+//when copy connection string to DockerFile: no white spaces and use Single quote!
+FROM mcr.microsoft.com/dotnet/aspnet:7.0-bullseye-slim-amd64 AS base
+RUN dotnet publish "Recruiting.API.csproj" -c Release -o /app/publish -r linux-x64 --self-contained false /p:UseAppHost=false
+
+
+build the docker image:(cd to HRM/)
+docker build -t recruitingapi .
+
+-t means tag
+. means find "Dockerfile" in the current folder. So use the dockerfile for the microservice you need
+and name it "Dockerfile". When you finish building, name it back to Dockerfile.Recruiting
+
+
+day8: CI/CD and DevOps

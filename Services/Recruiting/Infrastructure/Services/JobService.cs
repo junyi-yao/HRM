@@ -52,7 +52,8 @@ namespace Infrastructure.Services
                 Id = job.Id,
                 Title = job.Title,
                 StartDate = job.StartDate.GetValueOrDefault(),
-                Description = job.Description
+                Description = job.Description,
+                NumberOfPositions= job.NumberOfPositions
             };
             return jobResponseModel;
             
@@ -74,7 +75,7 @@ namespace Infrastructure.Services
             //The entity did not include the Id(PK)
             //But that's fine, the db will auto assign a PK to this entity
             //Each time the Add method is called, the PK will increase by one
-            //the id wil be included in the returned entity(the entity object is changed reflecting the change in the db)
+            //the id will be included in the returned entity(the entity object is changed reflecting the change in the db,e.g., it now has a primary key)
             //entity.Id now equals to the id assigned by the db
             var job = await _jobRepository.AddtAsync(jobEntity);
             return job.Id;
