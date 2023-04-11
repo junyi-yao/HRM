@@ -3203,11 +3203,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Recruiting\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Recruiting\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Recruiting\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Recruiting\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\junyi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Recruiting\\Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Recruiting\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\junyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3224,8 +3224,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Recruiting\\ApplicationCore\\ApplicationCore.csproj": {
-              "projectPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Recruiting\\ApplicationCore\\ApplicationCore.csproj"
+            "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Recruiting\\ApplicationCore\\ApplicationCore.csproj": {
+              "projectPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Recruiting\\ApplicationCore\\ApplicationCore.csproj"
             }
           }
         }
@@ -3261,7 +3261,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

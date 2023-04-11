@@ -314,3 +314,15 @@ and name it "Dockerfile". When you finish building, name it back to Dockerfile.R
 
 
 day8: CI/CD and DevOps
+
+check if it's available on your Desktop!
+I missed notes from day 8 to first half of day 10. But it's fine. If you need anything,
+just watch the lecture and write down if necessary. Or you can always read docs on LMS!
+Trust your self, you can handle it and do it well!
+
+day9:
+
+day10: JWT(Second half only)
+
+
+

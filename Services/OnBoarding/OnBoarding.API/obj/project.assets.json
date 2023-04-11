@@ -500,11 +500,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.API\\OnBoarding.API.csproj",
+      "projectUniqueName": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.API\\OnBoarding.API.csproj",
       "projectName": "OnBoarding.API",
-      "projectPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.API\\OnBoarding.API.csproj",
+      "projectPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.API\\OnBoarding.API.csproj",
       "packagesPath": "C:\\Users\\junyi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.API\\obj\\",
+      "outputPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\junyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -521,11 +521,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.ApplicationCore\\OnBoarding.ApplicationCore.csproj": {
-              "projectPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.ApplicationCore\\OnBoarding.ApplicationCore.csproj"
+            "C:\\Users\\junyi\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.ApplicationCore\\OnBoarding.ApplicationCore.csproj": {
+              "projectPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.ApplicationCore\\OnBoarding.ApplicationCore.csproj"
             },
-            "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.Infrastructure\\OnBoarding.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.Infrastructure\\OnBoarding.Infrastructure.csproj"
+            "C:\\Users\\junyi\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.Infrastructure\\OnBoarding.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.Infrastructure\\OnBoarding.Infrastructure.csproj"
             }
           }
         }
@@ -568,7 +568,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

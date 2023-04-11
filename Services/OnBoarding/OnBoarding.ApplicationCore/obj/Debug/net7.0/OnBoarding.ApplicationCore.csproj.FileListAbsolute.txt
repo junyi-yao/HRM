@@ -10,3 +10,15 @@ C:\Users\junyi\OneDrive\Desktop\HRM\Services\OnBoarding\OnBoarding.ApplicationCo
 C:\Users\junyi\OneDrive\Desktop\HRM\Services\OnBoarding\OnBoarding.ApplicationCore\obj\Debug\net7.0\refint\OnBoarding.ApplicationCore.dll
 C:\Users\junyi\OneDrive\Desktop\HRM\Services\OnBoarding\OnBoarding.ApplicationCore\obj\Debug\net7.0\OnBoarding.ApplicationCore.pdb
 C:\Users\junyi\OneDrive\Desktop\HRM\Services\OnBoarding\OnBoarding.ApplicationCore\obj\Debug\net7.0\ref\OnBoarding.ApplicationCore.dll
+C:\Users\junyi\Desktop\HRM\Services\OnBoarding\OnBoarding.ApplicationCore\bin\Debug\net7.0\OnBoarding.ApplicationCore.deps.json
+C:\Users\junyi\Desktop\HRM\Services\OnBoarding\OnBoarding.ApplicationCore\bin\Debug\net7.0\OnBoarding.ApplicationCore.dll
+C:\Users\junyi\Desktop\HRM\Services\OnBoarding\OnBoarding.ApplicationCore\bin\Debug\net7.0\OnBoarding.ApplicationCore.pdb
+C:\Users\junyi\Desktop\HRM\Services\OnBoarding\OnBoarding.ApplicationCore\obj\Debug\net7.0\OnBoarding.ApplicationCore.csproj.AssemblyReference.cache
+C:\Users\junyi\Desktop\HRM\Services\OnBoarding\OnBoarding.ApplicationCore\obj\Debug\net7.0\OnBoarding.ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\junyi\Desktop\HRM\Services\OnBoarding\OnBoarding.ApplicationCore\obj\Debug\net7.0\OnBoarding.ApplicationCore.AssemblyInfoInputs.cache
+C:\Users\junyi\Desktop\HRM\Services\OnBoarding\OnBoarding.ApplicationCore\obj\Debug\net7.0\OnBoarding.ApplicationCore.AssemblyInfo.cs
+C:\Users\junyi\Desktop\HRM\Services\OnBoarding\OnBoarding.ApplicationCore\obj\Debug\net7.0\OnBoarding.ApplicationCore.csproj.CoreCompileInputs.cache
+C:\Users\junyi\Desktop\HRM\Services\OnBoarding\OnBoarding.ApplicationCore\obj\Debug\net7.0\OnBoarding.ApplicationCore.dll
+C:\Users\junyi\Desktop\HRM\Services\OnBoarding\OnBoarding.ApplicationCore\obj\Debug\net7.0\refint\OnBoarding.ApplicationCore.dll
+C:\Users\junyi\Desktop\HRM\Services\OnBoarding\OnBoarding.ApplicationCore\obj\Debug\net7.0\OnBoarding.ApplicationCore.pdb
+C:\Users\junyi\Desktop\HRM\Services\OnBoarding\OnBoarding.ApplicationCore\obj\Debug\net7.0\ref\OnBoarding.ApplicationCore.dll

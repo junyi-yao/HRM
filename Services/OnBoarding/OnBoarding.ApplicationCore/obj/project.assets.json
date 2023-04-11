@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.ApplicationCore\\OnBoarding.ApplicationCore.csproj",
+      "projectUniqueName": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.ApplicationCore\\OnBoarding.ApplicationCore.csproj",
       "projectName": "OnBoarding.ApplicationCore",
-      "projectPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.ApplicationCore\\OnBoarding.ApplicationCore.csproj",
+      "projectPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.ApplicationCore\\OnBoarding.ApplicationCore.csproj",
       "packagesPath": "C:\\Users\\junyi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.ApplicationCore\\obj\\",
+      "outputPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\OnBoarding\\OnBoarding.ApplicationCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\junyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

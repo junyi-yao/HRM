@@ -10,3 +10,15 @@ C:\Users\junyi\OneDrive\Desktop\HRM\Services\Recruiting\ApplicationCore\obj\Debu
 C:\Users\junyi\OneDrive\Desktop\HRM\Services\Recruiting\ApplicationCore\obj\Debug\net7.0\refint\ApplicationCore.dll
 C:\Users\junyi\OneDrive\Desktop\HRM\Services\Recruiting\ApplicationCore\obj\Debug\net7.0\ApplicationCore.pdb
 C:\Users\junyi\OneDrive\Desktop\HRM\Services\Recruiting\ApplicationCore\obj\Debug\net7.0\ref\ApplicationCore.dll
+C:\Users\junyi\Desktop\HRM\Services\Recruiting\ApplicationCore\bin\Debug\net7.0\ApplicationCore.deps.json
+C:\Users\junyi\Desktop\HRM\Services\Recruiting\ApplicationCore\bin\Debug\net7.0\ApplicationCore.dll
+C:\Users\junyi\Desktop\HRM\Services\Recruiting\ApplicationCore\bin\Debug\net7.0\ApplicationCore.pdb
+C:\Users\junyi\Desktop\HRM\Services\Recruiting\ApplicationCore\obj\Debug\net7.0\ApplicationCore.csproj.AssemblyReference.cache
+C:\Users\junyi\Desktop\HRM\Services\Recruiting\ApplicationCore\obj\Debug\net7.0\ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\junyi\Desktop\HRM\Services\Recruiting\ApplicationCore\obj\Debug\net7.0\ApplicationCore.AssemblyInfoInputs.cache
+C:\Users\junyi\Desktop\HRM\Services\Recruiting\ApplicationCore\obj\Debug\net7.0\ApplicationCore.AssemblyInfo.cs
+C:\Users\junyi\Desktop\HRM\Services\Recruiting\ApplicationCore\obj\Debug\net7.0\ApplicationCore.csproj.CoreCompileInputs.cache
+C:\Users\junyi\Desktop\HRM\Services\Recruiting\ApplicationCore\obj\Debug\net7.0\ApplicationCore.dll
+C:\Users\junyi\Desktop\HRM\Services\Recruiting\ApplicationCore\obj\Debug\net7.0\refint\ApplicationCore.dll
+C:\Users\junyi\Desktop\HRM\Services\Recruiting\ApplicationCore\obj\Debug\net7.0\ApplicationCore.pdb
+C:\Users\junyi\Desktop\HRM\Services\Recruiting\ApplicationCore\obj\Debug\net7.0\ref\ApplicationCore.dll

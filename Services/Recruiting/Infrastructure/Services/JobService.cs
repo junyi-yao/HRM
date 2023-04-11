@@ -64,7 +64,8 @@ namespace Infrastructure.Services
             var jobEntity = new Job
             {
                 Title= model.Title,
-                StartDate= model.StartDate, 
+                JobCode = Guid.NewGuid(),
+                StartDate = model.StartDate, 
                 Description= model.Description,
                 CreatedOn = DateTime.UtcNow,
                 NumberOfPositions= model.NumberOfPositions,

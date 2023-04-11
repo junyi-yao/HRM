@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Authentication\\Authentication.API\\Authentication.API.csproj": {}
+    "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Authentication\\Authentication.API\\Authentication.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Authentication\\Authentication.API\\Authentication.API.csproj": {
+    "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Authentication\\Authentication.API\\Authentication.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Authentication\\Authentication.API\\Authentication.API.csproj",
+        "projectUniqueName": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Authentication\\Authentication.API\\Authentication.API.csproj",
         "projectName": "Authentication.API",
-        "projectPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Authentication\\Authentication.API\\Authentication.API.csproj",
+        "projectPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Authentication\\Authentication.API\\Authentication.API.csproj",
         "packagesPath": "C:\\Users\\junyi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Authentication\\Authentication.API\\obj\\",
+        "outputPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Authentication\\Authentication.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\junyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,7 +46,7 @@
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[7.0.2, )"
+              "version": "[7.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -58,9 +58,17 @@
               "target": "Package",
               "version": "[7.0.4, )"
             },
+            "Microsoft.IdentityModel.JsonWebTokens": {
+              "target": "Package",
+              "version": "[6.28.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.5.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.28.1, )"
             }
           },
           "imports": [
@@ -82,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

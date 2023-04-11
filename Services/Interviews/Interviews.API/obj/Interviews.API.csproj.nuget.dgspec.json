@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Interviews\\Interviews.API\\Interviews.API.csproj": {}
+    "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Interviews\\Interviews.API\\Interviews.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Interviews\\Interviews.API\\Interviews.API.csproj": {
+    "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Interviews\\Interviews.API\\Interviews.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Interviews\\Interviews.API\\Interviews.API.csproj",
+        "projectUniqueName": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Interviews\\Interviews.API\\Interviews.API.csproj",
         "projectName": "Interviews.API",
-        "projectPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Interviews\\Interviews.API\\Interviews.API.csproj",
+        "projectPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Interviews\\Interviews.API\\Interviews.API.csproj",
         "packagesPath": "C:\\Users\\junyi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Interviews\\Interviews.API\\obj\\",
+        "outputPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Interviews\\Interviews.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\junyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Interviews\\Interviews.ApplicationCore\\Interviews.ApplicationCore.csproj": {
-                "projectPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Interviews\\Interviews.ApplicationCore\\Interviews.ApplicationCore.csproj"
+              "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Interviews\\Interviews.ApplicationCore\\Interviews.ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Interviews\\Interviews.ApplicationCore\\Interviews.ApplicationCore.csproj"
               },
-              "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Interviews\\Interviews.Infrastructure\\Interviews.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Interviews\\Interviews.Infrastructure\\Interviews.Infrastructure.csproj"
+              "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Interviews\\Interviews.Infrastructure\\Interviews.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Interviews\\Interviews.Infrastructure\\Interviews.Infrastructure.csproj"
               }
             }
           }
@@ -75,18 +75,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Interviews\\Interviews.ApplicationCore\\Interviews.ApplicationCore.csproj": {
+    "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Interviews\\Interviews.ApplicationCore\\Interviews.ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Interviews\\Interviews.ApplicationCore\\Interviews.ApplicationCore.csproj",
+        "projectUniqueName": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Interviews\\Interviews.ApplicationCore\\Interviews.ApplicationCore.csproj",
         "projectName": "Interviews.ApplicationCore",
-        "projectPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Interviews\\Interviews.ApplicationCore\\Interviews.ApplicationCore.csproj",
+        "projectPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Interviews\\Interviews.ApplicationCore\\Interviews.ApplicationCore.csproj",
         "packagesPath": "C:\\Users\\junyi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Interviews\\Interviews.ApplicationCore\\obj\\",
+        "outputPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Interviews\\Interviews.ApplicationCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\junyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -130,18 +130,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Interviews\\Interviews.Infrastructure\\Interviews.Infrastructure.csproj": {
+    "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Interviews\\Interviews.Infrastructure\\Interviews.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Interviews\\Interviews.Infrastructure\\Interviews.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Interviews\\Interviews.Infrastructure\\Interviews.Infrastructure.csproj",
         "projectName": "Interviews.Infrastructure",
-        "projectPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Interviews\\Interviews.Infrastructure\\Interviews.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Interviews\\Interviews.Infrastructure\\Interviews.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\junyi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Interviews\\Interviews.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Interviews\\Interviews.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\junyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -158,8 +158,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Interviews\\Interviews.ApplicationCore\\Interviews.ApplicationCore.csproj": {
-                "projectPath": "C:\\Users\\junyi\\OneDrive\\Desktop\\HRM\\Services\\Interviews\\Interviews.ApplicationCore\\Interviews.ApplicationCore.csproj"
+              "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Interviews\\Interviews.ApplicationCore\\Interviews.ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\junyi\\Desktop\\HRM\\Services\\Interviews\\Interviews.ApplicationCore\\Interviews.ApplicationCore.csproj"
               }
             }
           }
@@ -189,7 +189,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
