@@ -406,9 +406,13 @@ System.IdentityModel.Tokens.Jwt
 
 
 copy your secret key from Authentication appsettings to Interviews appsettings,
-so that the server will generate JWT Token when you are authenticated, and use your JWT Token
+so that the server will generate JWT Token when you are authenticated(login), and use your JWT Token
 in the interviews API. 
 In the Interviews API, use """app.UseAuthorization();""" middleware  AFTER app.UseAuthentication();
+===>
+
+The JWT token is create by Authentication microservice and validated by Interviews microservice,
+because they share the same secret key.
 
 
 

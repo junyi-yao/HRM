@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Interviews.API.Controllers
@@ -9,6 +10,8 @@ namespace Interviews.API.Controllers
     {
         [HttpGet]
         [Route("")]
+        [Authorize]//will do the filter:this.HttpContext.User.Identity.IsAuthenticated
+        //if you are not authenticated, this method won't even be executed
         public IActionResult GetAllInterviews()
         {
             //go to database and get all the interviews based on role
@@ -19,6 +22,11 @@ namespace Interviews.API.Controllers
             //Authorization Header, Bearer Your_Token
             //userid, roles
             //decode the JWT to C# object
+
+            //if (this.HttpContext.User.Identity.IsAuthenticated)
+            //{
+            //    //go to database and get the values
+            //}
 
             var interviews = new List<String>(new[] {"abc, xyz, ddd","aasda"});
             return Ok(interviews);
