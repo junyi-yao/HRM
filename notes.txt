@@ -397,15 +397,18 @@ Value:
 Bearer Your_Token_here
 
 
-In your API, install:
+In your API, install:(install in both Authentication.API and Interviews.API)
 Microsoft.AspNetCore.Authentication.JwtBearer
 Microsoft.IdentityModel.Tokens
+Microsoft.IdentityModel.JsonWebTokens
+System.IdentityModel.Tokens.Jwt
+//IF you don't install these packages, you can't get authenticated!!!
 
 
 copy your secret key from Authentication appsettings to Interviews appsettings,
 so that the server will generate JWT Token when you are authenticated, and use your JWT Token
 in the interviews API. 
-In the Interviews API, use """app.UseAuthorization();""" middleware
+In the Interviews API, use """app.UseAuthorization();""" middleware  AFTER app.UseAuthentication();
 
 
 
