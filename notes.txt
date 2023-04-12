@@ -95,7 +95,9 @@ For Windows: "RecruitingDbConnection": "Server=Abhilash-PC;Database=RecruitingDb
 step7: establish that connectionString with the DbContext using DI using the AddDbContext method
 
 step8: Create your first Migration using dotnet ef tools commands
-//-p (stands for property) tells which project to use
+//-p (stands for property) tells which project to use.
+//We are in the RecruitingWeb Dir, we have our Program.cs and appsettings in RecruitingWeb
+//But we have the Data(DbContext) in Infrastructure
 dotnet ef migrations add InitialMigration -p ../Infrastructure/Infrastructure.csproj 
 
 some links:
@@ -314,3 +316,76 @@ and name it "Dockerfile". When you finish building, name it back to Dockerfile.R
 
 
 day8: CI/CD and DevOps
+
+
+??????
+
+
+day9 .net core identity
+
+
+1. Admins can create jobs and can see the submissions
+2. Admins can close a job
+3. Admins can schedule an interview
+4. Admins can create OnBoarding process, creating employees, editing employee Details
+
+5. Employees should be able to see their info only when they log in
+6. Candidates can see only their submissions
+
+
+7. Interviewers can see what interviews they need to do 
+
+//public information
+8. List of jobs, searching for jobs, job Details
+
+
+We should be able to create account
+
+User -> Id, FirstName, LastName, password, email, salt, createdDate
+
+Encryption -> CC, SSN, PI, Health, Security answers
+
+Hasing the password with Salt
+
+U1 -> test@test.com (abc123!! + abdjasdj) HashingAlg1 -> skffsdakjfhksdahfk
+U2 -> test2@test.com (abc123!! + hfskjadhfkj) HashingAlg1 -> asdasfdsadffasdf
+
+Login -> test@test.com abc123!! (abc1231!! + abdjasdj) HashingAlg1 vgsfshhjjdaj(compare the hasing code)
+
+use the framework: ASP.NET Core identity + EF Core -> SqlServer
+
+
+In authentication, install: Microsoft.AspNetCore.Identity.EntityFrameworkCore and EntityFrameworkCore.Design
+ 
+
+
+
+ day10 JWT authentication
+
+ Cookies => Web
+
+
+POST -> http://example.com/api/account/login ->  email/password
+        verify the email/password and send the JWT back to the client
+
+
+SPA(Angular/React) -> localstorage
+SPA: single page application
+
+interviews
+GET -> http://example.com/api/interviews  -> InterviewController, GetAllInterviews()
+    
+    JWT(dfasdfasdfsgfasdfgdfasgasdgfgasdf) HTTP header
+    Role of Admin
+
+    [Authorize]
+    Middleware
+
+POST -> http://example.com/api/interviews
+
+
+OnBoarding
+GET -> http://example.com/api/employees
+POST -> http://example.com/api/employees
+
+
