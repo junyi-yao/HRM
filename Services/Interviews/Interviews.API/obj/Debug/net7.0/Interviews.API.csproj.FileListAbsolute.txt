@@ -72,3 +72,11 @@ C:\Users\junyi\Desktop\HRM\Services\Interviews\Interviews.API\obj\Debug\net7.0\r
 C:\Users\junyi\Desktop\HRM\Services\Interviews\Interviews.API\obj\Debug\net7.0\Interviews.API.pdb
 C:\Users\junyi\Desktop\HRM\Services\Interviews\Interviews.API\obj\Debug\net7.0\Interviews.API.genruntimeconfig.cache
 C:\Users\junyi\Desktop\HRM\Services\Interviews\Interviews.API\obj\Debug\net7.0\ref\Interviews.API.dll
+C:\Users\junyi\Desktop\HRM\Services\Interviews\Interviews.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\junyi\Desktop\HRM\Services\Interviews\Interviews.API\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\junyi\Desktop\HRM\Services\Interviews\Interviews.API\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\junyi\Desktop\HRM\Services\Interviews\Interviews.API\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\junyi\Desktop\HRM\Services\Interviews\Interviews.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\junyi\Desktop\HRM\Services\Interviews\Interviews.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\junyi\Desktop\HRM\Services\Interviews\Interviews.API\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\junyi\Desktop\HRM\Services\Interviews\Interviews.API\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

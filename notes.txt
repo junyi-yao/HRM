@@ -324,5 +324,24 @@ day9:
 
 day10: JWT(Second half only)
 
+Format that you send your token in Postman(Headers):
+
+Key:
+Authorization
+
+Value:
+Bearer Your_Token_here
+
+
+In your API, install:
+Microsoft.AspNetCore.Authentication.JwtBearer
+Microsoft.IdentityModel.Tokens
+
+
+copy your secret key from Authentication appsettings to Interviews appsettings,
+so that the server will generate JWT Token when you are authenticated, and use your JWT Token
+in the interviews API. 
+In the Interviews API, use """app.UseAuthorization();""" middleware
+
 
 
