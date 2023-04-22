@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'RecruitingHRMYao'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C5971E1318DF41C8A25B2D1B1C71F968 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D34872CE1B444BA49E86D3F894F80D1F }}
           package: .
